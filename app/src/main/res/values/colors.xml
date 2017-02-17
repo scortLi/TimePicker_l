@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_top_text_color_gray">#c8c8c8</color>
+    <!-- 时间选择器 -->
+    <color name="date_time_picker_title">#323537</color>
+    <color name="date_time_picker_selected_num">#00a2ff</color>
+    <color name="date_time_picker_unselect_num">#aaadaf</color>
+    <color name="all_button_unpressed_color">#37a5f0</color>
+    <color name="all_button_pressed_color">#2b8ed2</color>
+    <color name="all_button_pressed_ok_color">#FF0000</color>
+    <color name="all_pressed_bg_color">#e7f7ff</color>
+    <color name="grayish">#E9E8EE</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="qr_code_background">#319fe8</color>
+    <color name="main_page_header_bg">#0fafff</color>
+</resources>

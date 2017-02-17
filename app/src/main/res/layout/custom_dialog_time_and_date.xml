@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/date_time_picker_height"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/date_time_picker_title_martop"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="取消"
+            android:layout_marginLeft="@dimen/date_time_picker_obj_word_size"
+            android:textColor="@color/main_top_text_color_gray"
+            android:textSize="@dimen/ic_home_location_text_size" />
+        <TextView
+            android:id="@+id/lbl_date_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用车时间"
+            android:layout_gravity="center"
+            android:textColor="@color/date_time_picker_title"
+            android:textSize="@dimen/date_time_picker_title_size" />
+        <TextView
+            android:id="@+id/lbl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无数据"
+            android:layout_gravity="center"
+            android:textColor="@color/date_time_picker_title"
+            android:textSize="@dimen/date_time_picker_title_size"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="确定"
+            android:layout_marginRight="@dimen/date_time_picker_obj_word_size"
+            android:textColor="@color/all_button_pressed_ok_color"
+            android:textSize="@dimen/ic_home_location_text_size" />
+
+        <TextView
+            android:id="@+id/lbl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无数据"
+            android:layout_marginRight="@dimen/date_time_picker_obj_word_size"
+            android:textColor="@color/date_time_picker_title"
+            android:textSize="@dimen/date_time_picker_title_size"
+            android:visibility="gone"/>
+    </FrameLayout >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/date_time_picker_title_marbottom"
+        android:background="@color/date_time_picker_unselect_num"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/date_time_picker_left_view_width"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/date_time_picker_left_view_height"
+                android:layout_centerInParent="true"
+                android:background="@color/date_time_picker_selected_num" />
+        </RelativeLayout>
+        <com.text.timepicker.java.widget.DatePicker
+            android:id="@+id/dp_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/all_border_width_onepx"
+            android:layout_marginRight="@dimen/all_border_width_onepx" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/date_time_picker_obj_obj_mar"
+        android:background="@color/date_time_picker_unselect_num"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/date_time_picker_left_view_width"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="77px"
+                android:layout_centerInParent="true"
+                android:background="@color/date_time_picker_selected_num"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <com.text.timepicker.java.widget.TimePicker
+            android:id="@+id/tp_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/all_border_width_onepx"
+            android:layout_marginRight="@dimen/all_border_width_onepx"
+            android:visibility="visible"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/btn_ok_g"
+        android:layout_width="@dimen/date_time_picker_btn_wid"
+        android:layout_height="@dimen/date_time_picker_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/date_time_picker_btn_martop"
+        android:layout_marginTop="@dimen/date_time_picker_btn_martop"
+        android:background="@drawable/btn_unit_add_ok_selector"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/date_time_picker_title_size"
+        android:visibility="gone"/>
+
+</LinearLayout>
